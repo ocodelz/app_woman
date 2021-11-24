@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "连接探头",
+  "navigationBarBackgroundColor": "#fc979f",
+  "usingComponents": {
+    "u-form": "/node-modules/uview-ui/components/u-form/u-form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u-image": "/node-modules/uview-ui/components/u-image/u-image",
+    "u-count-down": "/node-modules/uview-ui/components/u-count-down/u-count-down"
+  }
+}

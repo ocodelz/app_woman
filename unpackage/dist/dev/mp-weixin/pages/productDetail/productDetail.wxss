@@ -1,0 +1,9 @@
+.wrap.data-v-653d9208 {
+  height: 100vh;
+  background: #F3F3F3;
+}
+.data-v-653d9208 .uni-scroll-view::-webkit-scrollbar {
+  /* 隐藏滚动条，但依旧具备可以滚动的功能 */
+  display: none;
+}
+

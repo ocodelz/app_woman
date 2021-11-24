@@ -1,0 +1,1 @@
+<view><block wx:for="{{content}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><u-parse vue-id="{{'9c396cc0-1-'+index}}" html="{{item.F_CatelogContent}}" selectable="{{true}}" bind:__l="__l"></u-parse></block></block></view>

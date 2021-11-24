@@ -1,0 +1,35 @@
+
+.header.data-v-b237504c {
+	width: 161rpx;
+	width: 161rpx;
+	background: rgba(63, 205, 235, 0);
+	box-shadow: 0rpx 10rpx 15rpx 0rpx rgba(63, 205, 235, 0.47);
+	border-radius: 50%;
+	margin-top: 15rpx;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header image.data-v-b237504c {
+	width: 161rpx;
+	height: 161rpx;
+	border-radius: 50%;
+}
+.btnClass.data-v-b237504c {
+	/* margin-top: 40rpx; */
+	width: 526rpx;
+	background: #7eeeb1;
+	border: 1rpx solid #7eeeb1;
+	color: #fff;
+}
+.active.data-v-b237504c {
+	/* margin-top: 40rpx; */
+	width: 526rpx;
+	background-color: #00b457;
+	border: 1rpx solid #00b457;
+	color: #fff;
+}
+.bord.data-v-b237504c {
+	border: 2rpx solid #00b457;
+	padding: 2rpx;
+}
+

@@ -1,0 +1,270 @@
+{
+    "name" : "孕婴安_孕妇端",
+    "appid" : "__UNI__6142533",
+    "description" : "",
+    "versionName" : "2.9.3",
+    "versionCode" : 293,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "VideoPlayer" : {},
+            "Bluetooth" : {},
+            "Maps" : {},
+            "Payment" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            // 云打包生效 离线不行
+            // "permissionPhoneState" : {
+            //     "request" : "once",
+            //     "prompt" : "为保证您正常、安全地使用，需要获取设备识别码（部分手机提示为获取手机号码）使用权限，请允许。"
+            // },
+            // "permissionExternalStorage" : {
+            //     "request" : "once",
+            //     "prompt" : "应用保存运行状态等信息，需要获取读写手机存储（系统提示为访问设备上的照片、媒体内容和文件）权限，请允许。"
+            // },
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.BATTERY_STATS\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_PRIVILEGED\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>"
+                ],
+                "schemes" : "appwoman"
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "idfa" : false,
+                "urltypes" : [
+                    {
+                        "urlidentifier" : "com.runtest.test",
+                        "urlschemes" : [ "appwoman" ]
+                    }
+                ],
+                "privacyDescription" : {
+                    "NSBluetoothAlwaysUsageDescription" : "用于连接设备测量信息",
+                    "NSBluetoothPeripheralUsageDescription" : "用于连接设备测量信息"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "ad" : {},
+                "oauth" : {},
+                "payment" : {
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "wxc34165dbf6ce6975",
+                        "UniversalLinks" : "https://demo.dcloud.net.cn/ulink"
+                    },
+                    "appleiap" : {},
+                    "alipay" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wxc34165dbf6ce6975",
+                        "UniversalLinks" : "https://demo.dcloud.net.cn/ulink"
+                    }
+                },
+                "push" : {
+                    "unipush" : {}
+                },
+                "maps" : {
+                    "baidu" : {
+                        "appkey_ios" : "EohMGA00zWCpAjyLUvSWodeQ1lSKBXTY",
+                        "appkey_android" : "EohMGA00zWCpAjyLUvSWodeQ1lSKBXTY"
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png"
+                    },
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "useOriginalMsgbox" : false
+            }
+        },
+        "icons" : {
+            "android" : {
+                "hdpi" : "unpackage/res/icons/72x72.png",
+                "xhdpi" : "unpackage/res/icons/96x96.png",
+                "xxhdpi" : "unpackage/res/icons/144x144.png",
+                "xxxhdpi" : "unpackage/res/icons/192x192.png"
+            },
+            "ios" : {
+                "appstore" : "unpackage/res/icons/1024x1024.png",
+                "ipad" : {
+                    "app" : "unpackage/res/icons/76x76.png",
+                    "app@2x" : "unpackage/res/icons/152x152.png",
+                    "notification" : "unpackage/res/icons/20x20.png",
+                    "notification@2x" : "unpackage/res/icons/40x40.png",
+                    "proapp@2x" : "unpackage/res/icons/167x167.png",
+                    "settings" : "unpackage/res/icons/29x29.png",
+                    "settings@2x" : "unpackage/res/icons/58x58.png",
+                    "spotlight" : "unpackage/res/icons/40x40.png",
+                    "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                },
+                "iphone" : {
+                    "app@2x" : "unpackage/res/icons/120x120.png",
+                    "app@3x" : "unpackage/res/icons/180x180.png",
+                    "notification@2x" : "unpackage/res/icons/40x40.png",
+                    "notification@3x" : "unpackage/res/icons/60x60.png",
+                    "settings@2x" : "unpackage/res/icons/58x58.png",
+                    "settings@3x" : "unpackage/res/icons/87x87.png",
+                    "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                    "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                }
+            }
+        },
+        "safearea" : {
+            // "background":"#CCCCCC", // 安全区域外的背景颜色，默认值为"#FFFFFF"
+            "bottom" : {
+                // 底部安全区域配置
+                "offset" : "none" // 底部安全区域偏移，"none"表示不空出安全区域，"auto"自动计算空出安全区域，默认值为"none"
+            },
+            "left" : {
+                // 左侧安全区域配置（横屏显示时有效）
+                "offset" : "none"
+            },
+            "right" : {
+                // 右侧安全区域配置（横屏显示时有效）
+                "offset" : "none"
+            }
+        },
+        "uniStatistics" : {
+            "enable" : true
+        },
+        "nativePlugins" : {
+            "whx-MdFhrwhx" : {
+                "__plugin_info__" : {
+                    "name" : "mdfhr",
+                    "description" : "胎心监护仪设备搜索、连接、关闭，数据采集",
+                    "platforms" : "Android,iOS",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "uniStatistics" : {
+        "enable" : true
+    },
+    "h5" : {
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-qq" : {
+        "uniStatistics" : {
+            "enable" : true
+        }
+    }
+}
+// ...
+

@@ -1,0 +1,35 @@
+{
+    "name": "Fts6MgrPlugin",
+    "id": "Fts6MgrPlugin-Fts6MgrModule",
+    "version": "1.0.0",
+    "description": "胎心监护仪设备",
+    "_dp_type":"nativeplugin",
+    "_dp_nativeplugin":{
+		"android": {
+		            "plugins": [
+		                {
+		                    "type": "module",
+		                    "name": "Fts6MgrPlugin-Fts6MgrModule",
+		                    "class": "cn.ys.lbtx.Fts6MgrPlugin"
+		                }
+		            ],
+		            "integrateType": "aar",
+		          "dependencies": [
+		           
+		          ],
+		            "minSdkVersion": "23",
+		            "useAndroidX": true
+		        },
+		"ios": {
+		         "plugins": [{
+		             "type": "module",
+		             "name": "Fts6MgrPlugin-Fts6MgrModule",
+		             "class": "Fts6MgrModule"
+		         }],
+		         "frameworks": [ "CoreLocation.framework" ],
+		         "integrateType": "framework",
+		         "deploymentTarget": "9.0"
+		     }
+		
+    }
+}

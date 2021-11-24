@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "血压测量",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u-image": "/node-modules/uview-ui/components/u-image/u-image",
+    "u-line": "/node-modules/uview-ui/components/u-line/u-line",
+    "u-top-tips": "/node-modules/uview-ui/components/u-top-tips/u-top-tips",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

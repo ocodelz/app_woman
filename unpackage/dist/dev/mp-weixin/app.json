@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/tabbar/purchaseOrLease/purchaseOrLease",
+    "pages/probeConnection/probeConnection",
+    "pages/register/register",
+    "pages/changePassword/changePassword",
+    "pages/monitoringSettings/monitoringSettings",
+    "pages/pregnantWomanInformation/pregnantWomanInformation",
+    "pages/instructions/instructions",
+    "pages/search/search",
+    "pages/equipmentManagement/equipmentManagement",
+    "pages/guardianshipRecord/guardianshipRecord",
+    "pages/takeBloodPressure/takeBloodPressure",
+    "pages/bloodGlucoseTest/bloodGlucoseTest",
+    "pages/fetalHeartRateMonitoring/fetalHeartRateMonitoring",
+    "pages/custodyOrHelp/custodyOrHelp",
+    "pages/tabbar/index/index",
+    "pages/productDetail/productDetail",
+    "pages/tabbar/pregnancyKnowledge/pregnancyKnowledge",
+    "pages/tabbar/user/user",
+    "pages/update/index",
+    "pages/tabbar/msgCenter/msgCenter",
+    "pages/pregnantWomanOrNewbornFollowUpQuestionnaire/pregnantWomanOrNewbornFollowUpQuestionnaire",
+    "pages/postpartumOrPostoperativeQuestionnaireSurvey/postpartumOrPostoperativeQuestionnaireSurvey",
+    "pages/userAgreement/userAgreement"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTitleText": "uni-app",
+    "backgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#fc979f",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#fc979f",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/index/index",
+        "text": "首页",
+        "iconPath": "/static/image/tabbar/home.png",
+        "selectedIconPath": "/static/image/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/tabbar/purchaseOrLease/purchaseOrLease",
+        "text": "商城",
+        "iconPath": "/static/image/tabbar/gouwuche.png",
+        "selectedIconPath": "/static/image/tabbar/gouwuche_active.png"
+      },
+      {
+        "pagePath": "pages/tabbar/msgCenter/msgCenter",
+        "text": "消息",
+        "iconPath": "/static/image/tabbar/msg.png",
+        "selectedIconPath": "/static/image/tabbar/msg_active.png"
+      },
+      {
+        "pagePath": "pages/tabbar/pregnancyKnowledge/pregnancyKnowledge",
+        "text": "孕期知识",
+        "iconPath": "/static/image/tabbar/clown.png",
+        "selectedIconPath": "/static/image/tabbar/clown_active.png"
+      },
+      {
+        "pagePath": "pages/tabbar/user/user",
+        "text": "我的",
+        "iconPath": "/static/image/tabbar/wode.png",
+        "selectedIconPath": "/static/image/tabbar/wode_active.png"
+      }
+    ]
+  },
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {}
+}

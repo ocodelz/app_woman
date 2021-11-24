@@ -1,0 +1,110 @@
+
+.flex-column.data-v-0e7ddb05 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.content.data-v-0e7ddb05 {
+	/* background-image: var(--gradualBlue);
+	color: var(--white); */
+	/* bg-gradual-blue; */
+
+	background-color: #ffffff;
+
+	display: -webkit-box;
+
+	display: -webkit-flex;
+
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-align-content: center;
+	        align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.minorContent.data-v-0e7ddb05 {
+	width: 650rpx;
+	padding: 50rpx 50rpx;
+}
+.process.data-v-0e7ddb05 {
+	margin-top: 200rpx;
+	margin-left: 30%;
+}
+.logo.data-v-0e7ddb05 {
+	height: 200rpx;
+	width: 200rpx;
+	margin-top: 100rpx;
+}
+.title.data-v-0e7ddb05 {
+	font-size: 36rpx;
+	color: #373737;
+	font-weight: bold;
+}
+.infoTitle.data-v-0e7ddb05 {
+	font-size: 32rpx;
+	color: #373737;
+	padding-left: 15rpx;
+	font-weight: bold;
+}
+.tip.data-v-0e7ddb05 {
+	font-size: 28rpx;
+	color: #7e7e83;
+	vertical-align: text-top;
+}
+.bottom_aera.data-v-0e7ddb05 {
+	position: absolute;
+	bottom: 0;
+	height: 12%;
+}
+.line.data-v-0e7ddb05 {
+	padding: 0 200rpx;
+	border-bottom: 2rpx solid #d8d8d8;
+}
+.infoPic.data-v-0e7ddb05 {
+	height: 50rpx;
+	width: 50rpx;
+}
+.infoContentTitle.data-v-0e7ddb05 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 20rpx 40rpx;
+}
+.infoContent.data-v-0e7ddb05 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.updateInfo.data-v-0e7ddb05 {
+	font-size: 28rpx;
+	color: #7e7e83;
+	padding: 0 80rpx;
+}
+.smallTitle.data-v-0e7ddb05 {
+	font-size: 26rpx;
+	font-weight: 500;
+	padding: 20rpx 0;
+	line-height: 1.5;
+	color: #888;
+}
+

@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "胎心监护",
+  "usingComponents": {
+    "u-row": "/node-modules/uview-ui/components/u-row/u-row",
+    "u-col": "/node-modules/uview-ui/components/u-col/u-col",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "uni-countdown": "/components/uni-countdown/uni-countdown",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "u-top-tips": "/node-modules/uview-ui/components/u-top-tips/u-top-tips",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u-image": "/node-modules/uview-ui/components/u-image/u-image",
+    "u-count-down": "/node-modules/uview-ui/components/u-count-down/u-count-down",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

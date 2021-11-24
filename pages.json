@@ -1,0 +1,216 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/tabbar/purchaseOrLease/purchaseOrLease",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"navigationBarBackgroundColor": "#fc979f",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/probeConnection/probeConnection",
+			"style": {
+				"navigationBarTitleText": "连接探头",
+				"navigationBarBackgroundColor": "#fc979f"
+				// "navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "孕妇注册"
+			}
+		},
+		{
+			"path": "pages/changePassword/changePassword",
+			"style": {
+				"navigationBarTitleText": "更改密码"
+			}
+		},
+		// 监护设置
+		{
+			"path": "pages/monitoringSettings/monitoringSettings",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏
+			}
+		},
+		{
+			"path": "pages/pregnantWomanInformation/pregnantWomanInformation",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		// 仪器操作和使用
+		{
+			"path": "pages/instructions/instructions",
+			"style": {
+				"navigationBarTitleText": "使用说明"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		// 绑定的设备清单
+		{
+			"path": "pages/equipmentManagement/equipmentManagement",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/guardianshipRecord/guardianshipRecord", // 监护记录
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white",
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/takeBloodPressure/takeBloodPressure",
+			"style": {
+				"navigationBarTitleText": "血压测量",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/bloodGlucoseTest/bloodGlucoseTest", // 血糖测试
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/fetalHeartRateMonitoring/fetalHeartRateMonitoring",
+			"style": {
+				"navigationBarTitleText": "胎心监护"
+			}
+		},
+		{
+			"path": "pages/custodyOrHelp/custodyOrHelp",
+			"style": {
+				"navigationBarTitleText": "监护帮助"
+			}
+		},
+		{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "#ededed"
+			}
+		},
+		{
+			"path": "pages/productDetail/productDetail",
+			"navigationBarTitleText": ""
+		},
+		{
+			"path": "pages/tabbar/pregnancyKnowledge/pregnancyKnowledge",
+			"style": {
+				"navigationBarTitleText": "孕期40周",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabbar/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/update/index",
+			"style": {
+				"navigationBarTitleText": "版本升级"
+			}
+		},
+		{
+			"path": "pages/tabbar/msgCenter/msgCenter",
+			"style": {
+				"navigationBarTitleText": "消息中心"
+			}
+		},
+		{
+			"path": "pages/pregnantWomanOrNewbornFollowUpQuestionnaire/pregnantWomanOrNewbornFollowUpQuestionnaire",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/postpartumOrPostoperativeQuestionnaireSurvey/postpartumOrPostoperativeQuestionnaireSurvey",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/userAgreement/userAgreement",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "uni-app",
+		"backgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#fc979f",
+		"navigationBarTextStyle": "white",
+		"app-plus": {
+			"bounce": "none"
+		}
+	},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#fc979f",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/tabbar/index/index",
+				"text": "首页",
+				"iconPath": "/static/image/tabbar/home.png",
+				"selectedIconPath": "/static/image/tabbar/home_active.png"
+			},
+			{
+				"pagePath": "pages/tabbar/purchaseOrLease/purchaseOrLease",
+				"text": "商城",
+				"iconPath": "/static/image/tabbar/gouwuche.png",
+				"selectedIconPath": "/static/image/tabbar/gouwuche_active.png"
+			},
+			{
+				"pagePath": "pages/tabbar/msgCenter/msgCenter",
+				"text": "消息",
+				"iconPath": "/static/image/tabbar/msg.png",
+				"selectedIconPath": "/static/image/tabbar/msg_active.png"
+			},
+			{
+				"pagePath": "pages/tabbar/pregnancyKnowledge/pregnancyKnowledge",
+				"text":"孕期知识",
+				"iconPath": "/static/image/tabbar/clown.png",
+				"selectedIconPath": "/static/image/tabbar/clown_active.png"
+			},
+			{
+				"pagePath": "pages/tabbar/user/user",
+				"text": "我的",
+				"iconPath": "/static/image/tabbar/wode.png",
+				"selectedIconPath": "/static/image/tabbar/wode_active.png"
+			}
+		]
+	}
+}

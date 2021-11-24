@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "消息中心",
+  "usingComponents": {
+    "u-notice-bar": "/node-modules/uview-ui/components/u-notice-bar/u-notice-bar",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty"
+  }
+}
