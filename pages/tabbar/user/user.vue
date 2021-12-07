@@ -67,6 +67,11 @@
 						arrow: true
 					},
 					{
+						title: "订单管理",
+						icon: '/static/image/user/orderManagement.png',
+						arrow: true
+					},
+					{
 						title: "个人信息",
 						icon: '/static/image/user/gerenxinxi.png',
 						arrow: true
@@ -279,6 +284,9 @@
 				switch (item.title) {
 					case '设备管理':
 						this.$u.route('pages/equipmentManagement/equipmentManagement')
+						break;
+					case '订单管理':
+						this.$u.route('pages/orderManagement/orderManagement')
 						break;
 					case '个人信息':
 						this.$u.route('pages/pregnantWomanInformation/pregnantWomanInformation')

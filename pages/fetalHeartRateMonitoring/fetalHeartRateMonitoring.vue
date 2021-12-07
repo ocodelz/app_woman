@@ -148,6 +148,12 @@
 		 style="min-height: 80rpx;margin-top: -20rpx;">
 			<text class="text-danger" :class="isStop == false && isSwitchFlash == true && switchFlash == true ? 'flash' : ''">当前未开启实时模式，请点黄色闪动区域开启实时！</text>
 		</view>
+		<button @click="showTestData = !showTestData">调试数据</button>
+		<scroll-view scroll-y="true" style="height: 400rpx;" v-show="showTestData">
+			<view>
+				{{testData}}
+			</view>
+		</scroll-view>
 		<u-top-tips ref="uTips"></u-top-tips>
 		<u-modal :show-title="false" :show-confirm-button="false" v-model="show" confirm-color="#000" negative-top="90">
 			<view class="flex align-center justify-center flex-column" style="height: 280rpx;">
@@ -316,7 +322,9 @@
 				taixinId: '',
 				pageHeight: 0,
 				innerAudioContext: null,
-				notice_id: ''
+				notice_id: '',
+				testData: '',
+				showTestData: false
 			};
 		},
 		onBackPress(e) {
@@ -1358,6 +1366,7 @@
 							})
 							.then(res => {
 								console.log(JSON.stringify(res));
+								that.testData = JSON.stringify(res)
 								if (res.code == 200) {
 									let arr = res.data;
 									if (that.maindataInsert) {
@@ -1366,15 +1375,15 @@
 									}
 
 								} else {
-									this.$lz.toast(res.info);
+									that.$lz.toast(res.info);
 								}
 							}).catch(e => {
-								this.$lz.toast(e.errMsg);
+								that.$lz.toast(e.errMsg);
 							})
 					}, 200);
 				} catch (e) {
 					console.log(e.message);
-					this.testdata = e.message;
+					that.testdata = e.message;
 				}
 			},
 			handleUpfateDuration() {

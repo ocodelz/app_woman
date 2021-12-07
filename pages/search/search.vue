@@ -50,6 +50,7 @@
 		},
 		onShow() {
 			let arr = uni.getStorageSync('tag') || [];
+			console.log(arr);
 			if (arr !== []) {
 				this.list = arr;
 			}
@@ -71,11 +72,11 @@
 			},
 			handleDeleteAllTag() {
 				this.list = [];
-				uni.setStorageSync('tag', this.list)
+				uni.setStorageSync('tag', this.list);
 			},
 			handleDeleteTag(index) {
 				this.list.splice(index, 1);
-				uni.setStorageSync('tag', this.list)
+				uni.setStorageSync('tag', this.list);
 			},
 			handleTapTag(item) {
 				this.searchValue = item;

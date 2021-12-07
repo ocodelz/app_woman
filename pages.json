@@ -165,8 +165,40 @@
 			"style": {
 				"navigationBarTitleText": ""
 			}
+		},
+		{
+			"path": "pages/orderManagement/orderManagement",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"float": "right",
+							"color": "#FFFFFF"
+						}],
+						"searchInput": {
+							"align": "center",
+							"placeholder": "请输入查找订单信息",
+							"borderRadius": "30rpx",
+							"backgroundColor": "#fff",
+							"disabled":true
+						}
+					}
+				}
+			}
 		}
-	],
+	    ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTitleText": "uni-app",
 		"backgroundColor": "#F8F8F8",
@@ -201,7 +233,7 @@
 			},
 			{
 				"pagePath": "pages/tabbar/pregnancyKnowledge/pregnancyKnowledge",
-				"text":"孕期知识",
+				"text": "孕期知识",
 				"iconPath": "/static/image/tabbar/clown.png",
 				"selectedIconPath": "/static/image/tabbar/clown_active.png"
 			},

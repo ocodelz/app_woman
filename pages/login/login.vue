@@ -1,6 +1,7 @@
 <template>
 	<view class="flex flex-column" :style="'height:'+pageHeight+'px'">
-		<u-navbar title="登录" title-color="#000" :is-back="false" :background="background" :border-bottom="false"></u-navbar>
+		<u-navbar title="登录" title-color="#000" :is-back="false" :background="background" :border-bottom="false">
+		</u-navbar>
 		<view class="flex flex-column align-center justify-center mt-5">
 			<view style=" margin-bottom:76rpx;">
 				<text style="font-size: 36rpx;font-weight: 500;">*欢迎使用孕婴安*</text>
@@ -63,8 +64,10 @@
 
 				</view>
 				<view class="flex align-center w-100 mt-4">
-					<u-button class="mr-3" style="width: 160rpx;" shape="circle" type="error" @click="isPopup = false">暂不使用</u-button>
-					<u-button class="ml-3" style="width: 160rpx;" shape="circle" type="success" @click="handleTapConsent">同意</u-button>
+					<u-button class="mr-3" style="width: 160rpx;" shape="circle" type="error" @click="isPopup = false">
+						暂不使用</u-button>
+					<u-button class="ml-3" style="width: 160rpx;" shape="circle" type="success"
+						@click="handleTapConsent">同意</u-button>
 				</view>
 			</view>
 		</u-popup>
@@ -173,8 +176,8 @@
 			}
 		},
 		methods: {
-			handleTapConsent(){
-				uni.setStorageSync('agreement',1);
+			handleTapConsent() {
+				uni.setStorageSync('agreement', 1);
 				this.agreement = 1;
 				this.isPopup = false;
 			},
@@ -184,14 +187,14 @@
 			// },
 			// 登录按钮
 			handleBtnClick() {
-				if(uni.getStorageSync('agreement') == ''){
+				if (uni.getStorageSync('agreement') == '') {
 					return uni.showModal({
 						title: '温馨提示',
 						content: '请先同意“用户协议与隐私政策”',
 						success: res => {
-							if(res.cancel){
+							if (res.cancel) {
 								this.isPopup = false;
-							}else{
+							} else {
 								this.isPopup = true;
 							}
 						}
@@ -208,9 +211,9 @@
 							type: 2,
 							type1: 0
 						}
-						console.log(data);
+						// console.log(data);
 						this.$u.post('/AfterLogin', data).then(res => {
-							console.log(res);
+							// console.log(res);
 							let obj = res.data;
 							if (obj) {
 								if (obj.P_Yuchanqi == null) {
@@ -220,7 +223,7 @@
 									key: 'user_login',
 									data: obj
 								});
-								uni.setStorageSync('patID',res.data.patID)
+								uni.setStorageSync('patID', res.data.patID)
 								uni.setStorageSync('userType', obj.Type)
 							}
 							if (this.rememberPw == true) {
@@ -236,15 +239,18 @@
 								return false;
 							}
 							let p_currenttime = obj.p_currenttime;
-							if(uni.getSystemInfoSync().platform == 'ios'){
-								p_currenttime = p_currenttime.replace(/-/g,'/');
+							if (uni.getSystemInfoSync().platform == 'ios') {
+								p_currenttime = p_currenttime.replace(/-/g, '/');
 							}
 							let date = utils.formatTime(new Date());
-							let newDate = parseInt(Math.abs((new Date(p_currenttime).getTime() - new Date(date).getTime())) /1000/60);
-							if(newDate >= 5){
-								return this.$lz.hideCancel('提示','手机时间('+date.replace(/\//g,'-') + ')' + '与标准时间(' + p_currenttime.replace(/\//g,'-') + ')' + '不一致，请校准手机系统时间后重试！');
+							let newDate = parseInt(Math.abs((new Date(p_currenttime).getTime() - new Date(
+								date).getTime())) / 1000 / 60);
+							if (newDate >= 5) {
+								return this.$lz.hideCancel('提示', '手机时间(' + date.replace(/\//g, '-') + ')' +
+									'与标准时间(' + p_currenttime.replace(/\//g, '-') + ')' +
+									'不一致，请校准手机系统时间后重试！');
 							}
-							if(res.code == 200){
+							if (res.code == 200) {
 								if (uni.getStorageSync('userType') === '0') {
 									this.$u.route({
 										url: '/pages/tabbar/index/index',

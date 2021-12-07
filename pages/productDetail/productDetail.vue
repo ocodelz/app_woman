@@ -22,10 +22,10 @@
 				style="height: 88rpx;width: 100%;">
 				<text class="text-white">租用</text>
 			</view>
-		<!-- 	<view @click="howToUseIt(1)" class="bg-danger flex align-center justify-center"
+			<view @click="howToUseIt(1)" class="bg-danger flex align-center justify-center"
 				style="width: 50%;height: 88rpx;">
 				<text class="text-white">购买</text>
-			</view> -->
+			</view>
 		</view>
 		<u-popup mode="center" v-model="isShow" width="700" height="400" border-radius="12" safe-area-inset-bottom
 			@open="handlePopupShow">
@@ -202,38 +202,39 @@
 					r_deposit: arr.spec[0].e_deposit
 				}
 				console.log(obj);
-				this.$u.post('/EquipLeaseNew', obj).then(res => {
-					console.log(res);
-					if (res.code == 200 && res.data !== null) {
-						this.isShow = false;
-						uni.showModal({
-							title: '提示',
-							content: '设备' + this.collectionMethod + '成功!\n请联系管理员，领用设备。',
-							showCancel: false,
-							success: (res) => {
-								if (res.confirm) {
-									uni.$emit('current', {
-										current: 0
-									});
-									uni.navigateBack();
-								}
-							}
-						})
-					} else {
-						uni.showModal({
-							title: '提示',
-							content: '未知错误',
-							showCancel: false
-						})
-					}
-				}).catch(e => {
-					console.log(e);
-					uni.showToast({
-						title: '提示',
-						content: '错误',
-						icon: 'none'
-					})
-				})
+				this.$u.route('/pages/order/order?status=order');
+				// this.$u.post('/EquipLeaseNew', obj).then(res => {
+				// 	console.log(res);
+				// 	if (res.code == 200 && res.data !== null) {
+				// 		this.isShow = false;
+				// 		uni.showModal({
+				// 			title: '提示',
+				// 			content: '设备' + this.collectionMethod + '成功!\n请联系管理员，领用设备。',
+				// 			showCancel: false,
+				// 			success: (res) => {
+				// 				if (res.confirm) {
+				// 					uni.$emit('current', {
+				// 						current: 0
+				// 					});
+				// 					uni.navigateBack();
+				// 				}
+				// 			}
+				// 		})
+				// 	} else {
+				// 		uni.showModal({
+				// 			title: '提示',
+				// 			content: '未知错误',
+				// 			showCancel: false
+				// 		})
+				// 	}
+				// }).catch(e => {
+				// 	console.log(e);
+				// 	uni.showToast({
+				// 		title: '提示',
+				// 		content: '错误',
+				// 		icon: 'none'
+				// 	})
+				// })
 			}
 		}
 	}

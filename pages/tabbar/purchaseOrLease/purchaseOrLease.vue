@@ -71,6 +71,7 @@
 	export default {
 		data() {
 			return {
+				// index: '',
 				// 轮播图
 				swiperList: [{
 						img: '/static/image/purchaseOrLease/xueya.jpg',
